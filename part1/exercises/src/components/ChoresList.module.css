@@ -10,3 +10,11 @@
    color: purple;
    text-decoration: underline;
 }
+
+.removeBullets {
+   list-style: none;
+}
+
+.removeListIndent {
+   padding-left: 0;
+}

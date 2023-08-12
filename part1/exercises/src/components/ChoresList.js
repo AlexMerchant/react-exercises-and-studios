@@ -5,8 +5,8 @@ export default function ChoresList () {
    return (
       <div>
          <h3 className={classes.choresHeading}>Today's Chores</h3>
-         <ul>
-            {chores.map(idx => <li className={classes.choresText}>{idx}</li>)}
+         <ul class={classes.removeListIndent}>
+            {chores.map(idx => <li className={`${classes.choresText} ${classes.removeBullets}`}>{idx}</li>)}
          </ul>
       </div>
    );
