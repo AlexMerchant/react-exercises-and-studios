@@ -1,3 +1,13 @@
+import classes from './ChoresList.module.css'
+
 export default function ChoresList () {
-   return <p>No content is here!</p>;
+   const chores = ['Take a shower','Clean gardening tools','Finish landscaping']
+   return (
+      <div>
+         <h3 className={classes.choresHeading}>Today's Chores</h3>
+         <ul>
+            {chores.map(idx => <li className={classes.choresText}>{idx}</li>)}
+         </ul>
+      </div>
+   );
 }
